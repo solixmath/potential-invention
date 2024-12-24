@@ -3,39 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokéGuessr</title>
-    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
-            }
-        }
-    </script>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background: #000;
-            overflow: hidden;
-        }
-        #renderDiv {
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-        canvas {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-    </style>
+    <title>Ozzy's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div id="renderDiv"></div>
-    <script type="module" src="js/main.js"></script>
+    <div class="loading-screen" id="loading-screen">
+        <p>Loading...</p>
+    </div>
+    <div class="content" id="content">
+        <header>
+            <h1>Ozzy's Profile</h1>
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </header>
+        <section>
+            <h2>About Me</h2>
+            <p>My Name is Ozzy And I'm A 13 Year Old Web Developer And The Owner Of The Unblocked Game Website: <a href="https://mathpunch.github.io" target="_blank">https://mathpunch.github.io</a></p>
+        </section>
+        <section>
+            <h2>My Projects</h2>
+            <p><a href="https://solixmath.github.io" target="_blank">Solix Unblocked Game Website</a></p>
+        </section>
+        <section>
+            <h2>My Old Projects</h2>
+            <p><a href="https://mathpunch.github.io" target="_blank">mathpunch V2</a></p>
+        </section>
+        <footer>
+            <p>&copy; 2024 Solix Unblocked Games. All rights reserved.</p>
+        </footer>
+        <audio id="background-music" controls autoplay loop>
+            <source src="background-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 </body>
 </html>
