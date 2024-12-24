@@ -6,13 +6,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-body.dark-mode {
     background-color: #121212;
     color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .loading-screen {
@@ -39,7 +35,7 @@ body.dark-mode {
 .content {
     text-align: center;
     max-width: 600px;
-    background: #fff;
+    background: #1e1e1e;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
